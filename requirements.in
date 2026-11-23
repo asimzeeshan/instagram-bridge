@@ -1,0 +1,7 @@
+# Direct dependencies. requirements.txt is the locked, full list generated from this file:
+#   uv pip compile requirements.in -o requirements.txt --python-version 3.11 --python-platform x86_64-unknown-linux-gnu --upgrade
+fastapi
+uvicorn
+# Pinned to the version that has been logging in fine since April 2026. Updates arrive as Dependabot PRs
+# but are never auto-merged (see .github/workflows/build.yml): a login or session change can lock the account.
+instagrapi==2.3.0

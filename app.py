@@ -43,6 +43,10 @@ def login():
 
 @app.on_event("startup")
 async def startup():
+    # Set only by the CI smoke test, which has no Instagram credentials and must not log in from a CI host.
+    if os.environ.get("IG_SKIP_STARTUP_LOGIN") == "1":
+        logger.info("IG_SKIP_STARTUP_LOGIN=1: skipping the startup login")
+        return
     login()
 
 
