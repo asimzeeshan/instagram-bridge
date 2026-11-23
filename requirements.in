@@ -4,4 +4,4 @@ fastapi
 uvicorn
 # Pinned to the version that has been logging in fine since April 2026. Updates arrive as Dependabot PRs
 # but are never auto-merged (see .github/workflows/build.yml): a login or session change can lock the account.
-instagrapi==2.3.0
+instagrapi==3.2.19
