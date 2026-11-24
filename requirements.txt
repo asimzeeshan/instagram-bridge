@@ -9,13 +9,17 @@ anyio==4.16.0
     #   fastapi
     #   starlette
 certifi==2026.11.20
-    # via requests
+    # via
+    #   curl-cffi
+    #   requests
+cffi==2.1.1
+    # via curl-cffi
 charset-normalizer==3.5.2
     # via requests
 click==8.5.1
     # via uvicorn
-decorator==4.4.2
-    # via moviepy
+curl-cffi==0.17.0
+    # via instagrapi
 fastapi==0.165.0
     # via -r requirements.in
 h11==0.16.0
@@ -24,24 +28,14 @@ idna==3.20
     # via
     #   anyio
     #   requests
-imageio==2.38.2
-    # via moviepy
-imageio-ffmpeg==0.8.1
-    # via moviepy
-instagrapi==2.3.0
+instagrapi==3.2.19
     # via -r requirements.in
-moviepy==1.0.3
-    # via instagrapi
-numpy==2.4.6
-    # via
-    #   imageio
-    #   moviepy
 opentelemetry-api==1.45.2
     # via fastapi
 pillow==13.0.0
-    # via imageio
-proglog==0.1.12
-    # via moviepy
+    # via instagrapi
+pycparser==3.12
+    # via cffi
 pycryptodomex==3.23.0
     # via instagrapi
 pydantic==2.12.5
@@ -52,24 +46,16 @@ pydantic-core==2.41.5
     # via pydantic
 pysocks==1.7.1
     # via instagrapi
-requests==2.32.5
-    # via
-    #   instagrapi
-    #   moviepy
+requests==2.34.2
+    # via instagrapi
 starlette==1.10.0
     # via fastapi
-tqdm==4.70.1
-    # via
-    #   moviepy
-    #   proglog
 typing-extensions==4.16.0
     # via
-    #   anyio
     #   fastapi
     #   opentelemetry-api
     #   pydantic
     #   pydantic-core
-    #   starlette
     #   typing-inspection
 typing-inspection==0.4.5
     # via
